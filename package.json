@@ -1,0 +1,25 @@
+{
+  "name": "repaid-design",
+  "version": "1.0.0",
+  "description": "Сайт компании по ремонту квартир",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhirkin/repaid-design.git"
+  },
+  "author": "Nikita Zhirov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhirkin/repaid-design/issues"
+  },
+  "homepage": "https://github.com/zhirkin/repaid-design#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
