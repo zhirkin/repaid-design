@@ -13,7 +13,14 @@
     transition: box-shadow 0.3s
     &:hover
       box-shadow: none
+      background-color: transparent
+      color: $primary
+      transition: 0.5s
   &--outline
     border: 1px solid $light
     background-color: transparent
     color: $light
+    &:hover
+      background-color: $light
+      color: $dark
+      transition: 0.5s
