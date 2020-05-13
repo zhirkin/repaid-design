@@ -371,8 +371,11 @@ template {
 .policy__checkbox {
   opacity: 0;
   visibility: hidden; }
-  .policy__checkbox:checked + .policy__label::before {
-    background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
+  .policy__checkbox:checked + .policy__label {
+    font-size: 1.143rem;
+    line-height: 1.571rem; }
+    .policy__checkbox:checked + .policy__label::before {
+      background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
 
 .policy__label {
   display: flex;
@@ -667,20 +670,25 @@ img {
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
     font-size: 1.357rem;
+    line-height: 1.857rem;
     text-align: center;
     margin: 0;
-    margin-bottom: 2.428rem; }
+    margin-bottom: 1.928rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
     margin-bottom: 3.428rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+      margin-bottom: -0.3rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 17px 48px;
+    font-family: Futura Demi;
+    font-size: 0.928rem;
+    line-height: 1.286rem; }
 
 @media screen and (max-width: 1215px) {
   html {

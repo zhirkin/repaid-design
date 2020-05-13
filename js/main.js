@@ -9,4 +9,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
     element.addEventListener('click', switchModal);
   });
   closeBtn.addEventListener('click', switchModal);
-});
+  });
