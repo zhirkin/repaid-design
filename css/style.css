@@ -437,6 +437,16 @@ img {
       font-size: 1.428rem;
       line-height: 1.928rem; }
 
+.button-up {
+  background: #fff url(/img/up.png) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  padding: 15px;
+  margin: 100px 20px 20px 20px; }
+  .button-up:hover {
+    cursor: pointer; }
+
 .header {
   position: fixed;
   left: 0;
