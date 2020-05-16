@@ -830,11 +830,10 @@ img {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
-
-.project {
-  padding-top: 33px;
-  padding-left: 0; }
+    margin-left: 0; }
+  .project {
+    padding-top: 33px;
+    padding-left: 0; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
