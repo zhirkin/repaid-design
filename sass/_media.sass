@@ -13,6 +13,11 @@
     &__content
       margin-left: 0
 @media screen and ( max-width: 760px )
+  .col
+    &-40
+      width: 100%
+    &-60
+      width: 100%
   .row
     flex-direction: column
     align-items: center
@@ -22,6 +27,9 @@
   .card
     &__text
       margin-left: 0
+.project
+  padding-top: 33px
+  padding-left: 0
 @media screen and (max-width: 570px)
   .contacts
     &__phone
@@ -106,8 +114,37 @@
         line-height: 1.828rem
         max-width: 25.357rem
         margin-bottom: 0 
+    &-title
+      &__heading
+        margin-bottom: 2.04rem
+      &__word
+        &::after
+          display: none
+      &__text
+        font-size: 14px
+        line-height: 158.48%
+        max-width: 305px
   .dotes
     display: inline
+  .col
+    &-40
+      width: 100%
+    &-60
+      width: 100%
+  .swiper
+    &-slide
+      margin-bottom: 48px
+      &__heading
+        font-size: 14px
+        line-height: 138.6%
+        margin-top: 2rem
+        margin-bottom: 0.84rem
+      &__value
+        font-size: 14px
+        line-height: 135.84%
+      &__text
+        flex-basis: 47.4%
+        padding-bottom: 0.45rem
 @media screen and (max-height: 625px)
   .hero
     &__scroll-down
