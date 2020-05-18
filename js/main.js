@@ -82,4 +82,7 @@ $(document).ready(function(){
  showDuration: 600, 
  hideDuration: 300
  });
+
+  new WOW().init();
+
 });
