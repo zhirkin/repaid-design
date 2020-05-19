@@ -379,7 +379,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.142rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -388,6 +389,17 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.571rem; }
+  .policy__label--center {
+    justify-content: center; }
+
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
+
+.invalid {
+  padding-top: 5px; }
 
 .container {
   width: 85%;
@@ -700,8 +712,10 @@ img {
   position: relative;
   margin: auto; }
 
-.types__section-title {
-  margin-bottom: 2rem; }
+.types {
+  padding-bottom: 30rem; }
+  .types__section-title {
+    margin-bottom: 2rem; }
 
 .card__text {
   position: relative;
@@ -753,6 +767,51 @@ img {
 .dotes {
   display: none; }
 
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background-color: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    margin-top: -20rem;
+    margin-bottom: 3.714rem;
+    padding: 2.5rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 37.142rem;
+    margin: auto;
+    justify-content: space-between; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.785rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 4.285rem 0; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -798,9 +857,11 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
+    .modal__input-group-last {
       margin-bottom: -0.3rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
@@ -953,6 +1014,8 @@ img {
     line-height: 132.83%; }
   .section-title__heading {
     font-size: 1.843rem; }
+  .section-title__word::after {
+    display: none; }
   .types__section-title {
     margin-bottom: 3.3rem; }
   .types__card {
@@ -1006,7 +1069,52 @@ img {
       line-height: 135.84%; }
     .swiper-slide__text {
       flex-basis: 47.4%;
-      padding-bottom: 0.45rem; } }
+      padding-bottom: 0.45rem; }
+  .footer__policy {
+    margin-bottom: 5.6rem; }
+  .footer__button {
+    font-family: 'Futura Demi';
+    padding: 1.285rem 10.6rem;
+    font-size: 1.271rem;
+    line-height: 1.857rem; }
+  .footer__wrap {
+    padding: 2.5rem 0; }
+  .footer__title {
+    font-size: 1.66rem;
+    margin-bottom: 4.614rem; }
+  .footer__label {
+    font-size: 1.171rem;
+    line-height: 1.428rem; }
+  .footer__input {
+    font-size: 1.286rem;
+    line-height: 1.714rem; }
+    .footer__input-group {
+      flex-basis: 100%;
+      margin-bottom: 5rem; }
+      .footer__input-group-last {
+        margin-bottom: 0.3rem; }
+  .policy__label--center {
+    justify-content: start; }
+  input[type="text"]::-webkit-input-placeholder {
+    font-size: 1.17em; }
+  input[type="text"]::-moz-placeholder {
+    font-size: 1.17em; }
+  input[type="text"]:-ms-input-placeholder {
+    font-size: 1.17em; }
+  input[type="text"]::-ms-input-placeholder {
+    font-size: 1.17em; }
+  input[type="text"]::placeholder {
+    font-size: 1.17em; }
+  input[type="tel"]::-webkit-input-placeholder {
+    font-size: 1.17em; }
+  input[type="tel"]::-moz-placeholder {
+    font-size: 1.17em; }
+  input[type="tel"]:-ms-input-placeholder {
+    font-size: 1.17em; }
+  input[type="tel"]::-ms-input-placeholder {
+    font-size: 1.17em; }
+  input[type="tel"]::placeholder {
+    font-size: 1.17em; } }
 
 @media screen and (max-height: 625px) {
   .hero__scroll-down {
