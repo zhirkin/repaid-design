@@ -170,4 +170,30 @@ $(document).ready(function(){
   });
   // маска для телефона
   $('[type=tel]').mask('+7(000)000-00-00');
+  //Валидация формы
+  $('.control__form').validate({
+    errorClass: "control-invalid",
+    errorElement: "div",
+    rules: {
+      // Строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      policyCheckbox: "required",
+    }, // сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее пятнадцати букв"
+      },
+      userPhone: "Телефон обязателен",
+      policyCheckbox: "Требуется согласие на обработку данных",
+    },
+  });
+  // маска для телефона
+  $('[type=tel]').mask('+7(000)000-00-00');
 });

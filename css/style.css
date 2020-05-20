@@ -372,8 +372,7 @@ template {
   opacity: 0;
   visibility: hidden; }
   .policy__checkbox:checked + .policy__label {
-    font-size: 1.143rem;
-    line-height: 1.571rem; }
+    font-size: 1.143rem; }
     .policy__checkbox:checked + .policy__label::before {
       background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
 
@@ -392,14 +391,13 @@ template {
   .policy__label--center {
     justify-content: center; }
 
-.invalid {
-  color: tomato; }
-
 input.invalid {
   border-bottom: 1px solid tomato; }
 
-.invalid {
-  padding-top: 5px; }
+div.invalid {
+  position: absolute;
+  color: tomato;
+  bottom: -15px; }
 
 .container {
   width: 85%;
@@ -689,7 +687,8 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 55rem;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
 
 .control__input-group {
   display: flex;
@@ -708,9 +707,17 @@ img {
 .control__button {
   padding: 1.2857rem 4.7857rem; }
 
+.control__input {
+  color: #181818; }
+
 .video__play {
   position: relative;
   margin: auto; }
+
+div.control-invalid {
+  position: absolute;
+  color: tomato;
+  bottom: 35px; }
 
 .types {
   padding-bottom: 30rem; }
@@ -798,7 +805,8 @@ img {
       display: flex;
       flex-direction: column;
       flex-basis: 45%;
-      margin-bottom: 3.2rem; }
+      margin-bottom: 3.2rem;
+      position: relative; }
       .footer__input-group--full-width {
         flex-basis: 100%;
         margin-bottom: 2rem; }
@@ -860,7 +868,8 @@ img {
   .modal__input-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 3.428rem; }
+    margin-bottom: 3.428rem;
+    position: relative; }
     .modal__input-group-last {
       margin-bottom: -0.3rem; }
   .modal__policy {

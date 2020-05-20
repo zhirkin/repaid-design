@@ -39,6 +39,7 @@
     flex-wrap: wrap
     max-width: 55rem
     margin: auto
+    position: relative
   &__input-group
     display: flex
     flex-direction: column
@@ -52,7 +53,13 @@
     margin-bottom: 7px
   &__button
     padding: 1.2857rem 4.7857rem
+  &__input
+    color: $black
 .video
   &__play
     position: relative
     margin: auto
+div.control-invalid
+  position: absolute
+  color: tomato
+  bottom: 35px

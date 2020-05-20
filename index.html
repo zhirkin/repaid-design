@@ -173,15 +173,15 @@
         <form action="" class="form control__form">
           <div class="control__input-group wow animate__animated animate__fadeIn">
             <label for="user-name" class="label form__label control__label">Имя</label>
-            <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+            <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
           </div>
           <div class="control__input-group wow animate__animated animate__fadeIn">
             <label for="user-phone" class="label form__label control__label">Телефон</label>
-            <input type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+            <input type="tel" name="userPhone" class="input form__input control__input" id="userphone" placeholder="Ваш номер телефона:">
           </div>
           <button class="button button--primary modal__button">Отправить</button>
           <div class="policy control__policy wow animate__animated animate__fadeIn">
-            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+            <input type="checkbox" name="policyCheckbox" id="policy-checkbox" class="policy__checkbox" checked>
             <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
@@ -452,8 +452,8 @@
             <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="user-question" placeholder="Я хочу спросить"> 
           </div>
           <div class="policy footer__policy">
-            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-            <label for="policy-checkbox" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
+            <input type="checkbox" name="footer-policy-checkbox" id="footer-policy-checkbox" class="policy__checkbox" checked>
+            <label for="footer-policy-checkbox" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
           <button class="button button--primary footer__button">Отправить</button>
@@ -507,8 +507,8 @@
           <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email">
         </div>
         <div class="policy modal__policy">
-          <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-          <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+          <input type="checkbox" name="modal-policy-checkbox" id="modal-policy-checkbox" class="policy__checkbox" checked>
+          <label for="modal-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->
         <button class="button button--primary modal__button">Отправить заявку</button>
