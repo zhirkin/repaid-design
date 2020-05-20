@@ -793,6 +793,13 @@ div.control-invalid {
     text-align: center;
     margin-bottom: 3.214rem;
     margin-top: 0; }
+    .footer__title--primary {
+      margin: auto;
+      color: #E3B873;
+      line-height: 28px;
+      margin-bottom: 22px;
+      max-width: 460px;
+      width: 100%; }
   .footer__form {
     display: flex;
     flex-wrap: wrap;
@@ -818,7 +825,24 @@ div.control-invalid {
     padding: 1.285rem 4.785rem; }
   .footer__menu {
     background-color: #131313;
-    padding: 4.285rem 0; }
+    padding: 3.385rem 0; }
+  .footer__block {
+    display: flex;
+    flex-direction: column; }
+  .footer__map {
+    min-height: 465px;
+    max-width: 925px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 4.8rem;
+    order: 2; }
+  .footer__adress {
+    order: 1; }
+    .footer__adress-icons {
+      text-align: center;
+      margin-bottom: 38px; }
+  .footer-icon {
+    margin-right: 11px; }
 
 .modal {
   opacity: 0;
@@ -1079,29 +1103,49 @@ div.control-invalid {
     .swiper-slide__text {
       flex-basis: 47.4%;
       padding-bottom: 0.45rem; }
-  .footer__policy {
-    margin-bottom: 5.6rem; }
-  .footer__button {
-    font-family: 'Futura Demi';
-    padding: 1.285rem 10.6rem;
-    font-size: 1.271rem;
-    line-height: 1.857rem; }
-  .footer__wrap {
-    padding: 2.5rem 0; }
-  .footer__title {
-    font-size: 1.66rem;
-    margin-bottom: 4.614rem; }
-  .footer__label {
-    font-size: 1.171rem;
-    line-height: 1.428rem; }
-  .footer__input {
-    font-size: 1.286rem;
-    line-height: 1.714rem; }
-    .footer__input-group {
-      flex-basis: 100%;
-      margin-bottom: 5rem; }
-      .footer__input-group-last {
-        margin-bottom: 0.3rem; }
+  .footer {
+    background: #131313; }
+    .footer__policy {
+      margin-bottom: 5.6rem; }
+    .footer__button {
+      font-family: 'Futura Demi';
+      padding: 1.285rem 10.6rem;
+      font-size: 1.271rem;
+      line-height: 1.857rem; }
+    .footer__wrap {
+      padding: 2.5rem 0;
+      margin-bottom: 1.214rem; }
+    .footer__title {
+      font-size: 1.66rem;
+      margin-bottom: 4.614rem; }
+      .footer__title--primary {
+        font-size: 18.2px;
+        line-height: 138.6%;
+        margin-bottom: 1.714rem; }
+    .footer__label {
+      font-size: 1.171rem;
+      line-height: 1.428rem; }
+    .footer__input {
+      font-size: 1.286rem;
+      line-height: 1.714rem; }
+      .footer__input-group {
+        flex-basis: 100%;
+        margin-bottom: 5rem; }
+        .footer__input-group-last {
+          margin-bottom: 0.3rem; }
+    .footer__adress {
+      order: 2; }
+    .footer__map {
+      order: 1;
+      min-height: 255px;
+      margin-bottom: 3.2rem; }
+    .footer__menu {
+      display: none; }
+    .footer-mail {
+      width: 39px;
+      height: 39px; }
+    .footer-icon {
+      margin-right: 19px; }
   .policy__label--center {
     justify-content: start; }
   input[type="text"]::-webkit-input-placeholder {
