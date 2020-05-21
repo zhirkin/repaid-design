@@ -182,7 +182,6 @@ $(document).ready(function(){
         maxlength: 15
       },
       userPhone: "required",
-      policyCheckbox: "required",
     }, // сообщения
     messages: {
       userName: {
@@ -191,7 +190,6 @@ $(document).ready(function(){
         maxlength: "Имя не длиннее пятнадцати букв"
       },
       userPhone: "Телефон обязателен",
-      policyCheckbox: "Требуется согласие на обработку данных",
     },
   });
   // маска для телефона

@@ -2,7 +2,7 @@
   background: $dark url('../img/footer-bg.jpg') no-repeat center/ cover
   padding-top: 3rem
   &__wrap
-    background-color: $black
+    background: $black url(../img/footer-wrap.svg) center
     max-width: 63.07rem
     margin: auto
     margin-top: -20rem
@@ -17,13 +17,15 @@
     text-align: center
     margin-bottom: 3.214rem
     margin-top: 0
-    &--primary
+  &__block
+    &-title
       margin: auto
-      color: $primary
       line-height: 28px
       margin-bottom: 22px
       max-width: 460px
       width: 100%
+      &--primary
+        color: $primary
   &__form
     display: flex
     flex-wrap: wrap

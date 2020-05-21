@@ -35,11 +35,10 @@
       border-radius: 30px
   &__form
     display: flex
-    justify-content: space-between
     flex-wrap: wrap
+    justify-content: space-between
     max-width: 55rem
     margin: auto
-    position: relative
   &__input-group
     display: flex
     flex-direction: column
@@ -55,11 +54,13 @@
     padding: 1.2857rem 4.7857rem
   &__input
     color: $black
+    &-group
+      position: relative
 .video
   &__play
     position: relative
     margin: auto
 div.control-invalid
-  position: absolute
   color: tomato
-  bottom: 35px
+  position: absolute
+  top: 60px
