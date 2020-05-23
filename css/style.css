@@ -379,7 +379,8 @@ template {
 .policy__label {
   display: flex;
   align-items: center;
-  font-size: 1.142rem; }
+  font-size: 1.142rem;
+  position: relative; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -698,7 +699,8 @@ img {
   flex-basis: 100%;
   margin-top: 1.2rem; }
   .control__policy-label {
-    justify-content: center; }
+    justify-content: center;
+    position: relative; }
 
 .control__label {
   margin-bottom: 7px; }
@@ -907,7 +909,8 @@ div.control-invalid {
     .modal__input-group-last {
       margin-bottom: -0.3rem; }
   .modal__policy {
-    margin-bottom: 2.7rem; }
+    margin-bottom: 2.7rem;
+    position: relative; }
   .modal__button {
     align-self: flex-end;
     padding: 17px 48px;

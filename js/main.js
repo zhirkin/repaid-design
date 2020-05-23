@@ -117,7 +117,8 @@ $(document).ready(function () {
             userEmail: {
                 required: true,
                 email: true
-            }
+            },
+            policyCheckbox: "required",
         }, // сообщения
         errorPlacement: function (error, element) {
             if (element.attr("type") == "checkbox") {
@@ -136,7 +137,8 @@ $(document).ready(function () {
             userEmail: {
                 required: "Обязательно укажите email",
                 email: "Введите в формате name@domain.com"
-            }
+            },
+            policyCheckbox: "Согласие обязательно",
         },
         submitHandler: function (form) {
             $.ajax({
@@ -174,7 +176,8 @@ $(document).ready(function () {
                 required: true,
                 minlength: 2,
                 maxlength: 15
-            }
+            },
+            policyCheckbox: "required",
         }, // сообщения
         errorPlacement: function (error, element) {
             if (element.attr("type") == "checkbox") {
@@ -190,6 +193,7 @@ $(document).ready(function () {
                 maxlength: "Имя не длиннее пятнадцати букв"
             },
             userPhone: "Телефон обязателен",
+            policyCheckbox: "Согласие обязательно",
             userQuestion: {
                 required: "Обязательно задайте вопрос",
                 minlength: "Вопрос не короче двух букв",
@@ -221,6 +225,7 @@ $(document).ready(function () {
                 maxlength: 15
             },
             userPhone: "required",
+            policyCheckbox: "required",
         }, // сообщения
         errorPlacement: function (error, element) {
             if (element.attr("type") == "checkbox") {
@@ -236,6 +241,7 @@ $(document).ready(function () {
                 maxlength: "Имя не длиннее пятнадцати букв"
             },
             userPhone: "Телефон обязателен",
+            policyCheckbox: "Согласие обязательно",
         },
         submitHandler: function (form) {
             $.ajax({
