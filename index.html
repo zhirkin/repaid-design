@@ -174,7 +174,7 @@
         <form action="" class="form control__form">
           <div class="control__input-group control__input-group-first wow animate__animated animate__fadeIn">
             <label for="user-name" class="label form__label control__label">Имя</label>
-            <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+            <input type="text" name="userName" class="input form__input control__input" id="user-name-control" placeholder="Как вас зовут:">
           </div>
           <div class="control__input-group control__input-group-second wow animate__animated animate__fadeIn">
             <label for="user-phone" class="label form__label control__label">Телефон</label>
@@ -442,11 +442,11 @@
         <form action="" class="form footer__form">
           <div class="input-group footer__input-group">
             <label for="user-name" class="label form__label label--light footer__label">Имя</label>
-            <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name" placeholder="Как вас зовут:">
+            <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name-footer" placeholder="Как вас зовут:">
           </div>
           <div class="input-group footer__input-group">
             <label for="user-phone" class="label form__label label--light footer__label">Телефон</label>
-            <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+            <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="user-phone-form" placeholder="Ваш номер телефона:">
           </div>
           <div class="input-group footer__input-group footer__input-group-last footer__input-group--full-width">
             <label for="user-question" class="label form__label label--light footer__label">Вопрос</label>
@@ -506,18 +506,25 @@
     <!-- /.footer__menu -->
   </footer>
   <!-- /.footer section section--dark -->
-  <div class="modal">
+  <form class="modal-thanks">
+    <div class="modal-thanks__dialog">
+      <h3 class="modal-thanks__title">Спасибо за заявку. Менеджер свяжется с вами в течении 10 минут.</h3>
+    </div>
+    <!-- /.modal-thanks__dialog -->
+  </form>
+  <!-- /.modal-thanks -->
+  <form class="modal">
     <div class="modal__dialog">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
       <form action="send.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
           <label for="user-name" class="label form__label label--light">Имя</label>
-          <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
+          <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name-form" placeholder="Как вас зовут:">
         </div>
         <div class="input-group modal__input-group">
           <label for="user-phone" class="label form__label label--light">Телефон</label>
-          <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+          <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="user-phone-modal" placeholder="Ваш номер телефона:">
         </div>
         <div class="input-group modal__input-group modal__input-group-last">
           <label for="user-email" class="label form__label label--light">Email</label>
@@ -533,7 +540,7 @@
       <!-- /.form modal__form -->
     </div>
     <!-- /.modal__dialog -->
-  </div>
+  </form>
   <!-- /.modal -->
   <div style="position: absolute; top: 1284px; right: 0px; display:none;" class="button-up"></div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

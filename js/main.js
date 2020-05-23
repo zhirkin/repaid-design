@@ -34,6 +34,7 @@ $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close');
+      modalThanks = $('.modal-thanks');
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible')
   });
@@ -120,6 +121,13 @@ $(document).ready(function(){
         email: true
       }
     }, // сообщения
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+    },
     messages: {
       userName: {
         required: "Имя обязательно",
@@ -131,6 +139,23 @@ $(document).ready(function(){
         required: "Обязательно укажите email",
         email: "Введите в формате name@domain.com"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+          const modalThanks = $('.modal-thanks');
+            modalThanks.addClass('modal-thanks--visible');
+          setTimeout(function(){
+            modalThanks.removeClass('modal-thanks--visible');
+          }, 5000);
+        },
+      });
     }
   });
   // маска для телефона
@@ -154,6 +179,13 @@ $(document).ready(function(){
         maxlength: 15
       }
     }, // сообщения
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+    },
     messages: {
       userName: {
         required: "Имя обязательно",
@@ -183,6 +215,13 @@ $(document).ready(function(){
       },
       userPhone: "required",
     }, // сообщения
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+    },
     messages: {
       userName: {
         required: "Имя обязательно",
@@ -224,6 +263,5 @@ $(document).ready(function(){
           });
       myMap.geoObjects
           .add(myPlacemark)
-          .add(myPlacemarkWithContent);
   });
 });
