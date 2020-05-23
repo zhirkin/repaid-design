@@ -930,6 +930,9 @@ div.control-invalid {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .modal-thanks--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal-thanks__dialog {
     position: relative;
     max-width: 36.36rem;
@@ -944,9 +947,6 @@ div.control-invalid {
     text-align: center;
     margin: 0;
     margin-bottom: 1.928rem; }
-  .modal-thanks--visible {
-    opacity: 1;
-    visibility: visible; }
 
 .projects {
   padding-bottom: 30rem; }
